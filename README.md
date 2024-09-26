@@ -1,7 +1,7 @@
 # Kestrel 
 Mapping plugin for new Kismet API
 
-![logo](https://github.com/SoliForte/Kestrel/blob/master/Kestrel.png)
+![logo](https://github.com/daiceman825/Kestrel/blob/master/Kestrel.png)
 
 # Disclaimers
 
@@ -18,7 +18,21 @@ Also, a huge thanks to Dragorn (@kismetwireless) for making this whole thing pos
 The intent of this plugin is to add live mapping of networks into the Kismet UI directly.
 
 # Fork notes
+### iceman
+26-SEP-2024: Re-uploaded hobobandy's fork of kestrel from 26 AUG 2023. This was the latest version that I had downloaded before it was deleted. The latest version of kismet that I have tested with is `Kismet 2023-07-R1`. I will work on updating it to the latest version. 
 
+```bash
+# get current version of kismet
+$ kismet --version
+Kismet 2023-07-R1
+
+# hold updates for kismet
+$ apt-mark hold kismet
+$ apt-mark showhold
+kismet
+```
+
+### Hobobandy
 01-20-2023: Some of the original code was refactored/replaced. Added drawing the drive path. Leaflet plugin files for mouse coordinates were added to the repo, but aren't used yet.
 
 # Updates
@@ -35,21 +49,15 @@ A couple of notes: I have not worked out how to prevent duplicate markers, so st
 
 Refreshing the browser clears the map of all markers.
 
-# TODO
-1. ~~Center on operator.~~
-2. Draw Drivepath.
-3. Cache offline map tiles.
-4. Search function
-
 # Installation
 
 Still under heavy development, also: I don't know any javascript at all, so if you have suggestions to fix/improve, let me know.
 
-Assuming you have the newest build of kismet installed (from the Kismet git-master development repository):
+Assuming you have ~the newest build of~ kismet installed:
 
    Clone this repository 
 
-    $ git clone https://github.com/hobobandy/kestrel
+    $ git clone https://github.com/daiceman825/kestrel
 
    Install the plugin - plugins can be installed system-side or to your home directory only.
 
