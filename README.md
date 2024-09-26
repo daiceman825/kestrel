@@ -17,6 +17,10 @@ Also, a huge thanks to Dragorn (@kismetwireless) for making this whole thing pos
 
 The intent of this plugin is to add live mapping of networks into the Kismet UI directly.
 
+# Fork notes
+
+01-20-2023: Some of the original code was refactored/replaced. Added drawing the drive path. Leaflet plugin files for mouse coordinates were added to the repo, but aren't used yet.
+
 # Updates
 
 10-6-2017: Kestrel now supports searching! Using the main search bar above the Devices list in the Kismet UI will now also filter and display markers for only those devices. Currently, it is case SENSITIVE... working on that.
@@ -45,7 +49,7 @@ Assuming you have the newest build of kismet installed (from the Kismet git-mast
 
    Clone this repository 
 
-    $ git clone https://github.com/soliforte/kestrel
+    $ git clone https://github.com/hobobandy/kestrel
 
    Install the plugin - plugins can be installed system-side or to your home directory only.
 
